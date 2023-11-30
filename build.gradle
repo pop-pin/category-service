@@ -53,7 +53,7 @@ jib {
 		image = 'amazoncorretto:17-alpine-jdk'
 	}
 	to {
-		image = 'poppinteam/review-service'
+		image = 'poppinteam/category-service'
 		tags = ['git rev-parse --verify --short HEAD'.execute().text.trim(), 'latest']
 	}
 	container {

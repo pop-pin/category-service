@@ -1,4 +1,4 @@
-package com.example.categoryservice.entity;
+package com.poppin.categoryservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Builder;

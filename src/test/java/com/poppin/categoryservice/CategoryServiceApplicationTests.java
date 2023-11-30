@@ -1,4 +1,4 @@
-package com.example.categoryservice;
+package com.poppin.categoryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

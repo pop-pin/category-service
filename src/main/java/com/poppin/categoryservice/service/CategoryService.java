@@ -1,7 +1,7 @@
-package com.example.categoryservice.service;
+package com.poppin.categoryservice.service;
 
-import com.example.categoryservice.entity.Category;
-import com.example.categoryservice.repository.CategoryRepository;
+import com.poppin.categoryservice.entity.Category;
+import com.poppin.categoryservice.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
