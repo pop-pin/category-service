@@ -27,7 +27,7 @@ public class CategoryController {
     }
 
     /**
-     * 카테고리 목록 가져오기
+     * 카테고리 전체 목록 가져오기
      */
     @GetMapping("/all")
     public Page<Category> getCategory(@RequestParam("page") int page, @RequestParam int size) {
