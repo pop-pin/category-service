@@ -20,7 +20,7 @@ public class CategoryController {
     /**
      * 카테고리 생성
      */
-    @PostMapping("/create")
+    @PostMapping("/")
     public ResponseEntity<Long> createCategory(@RequestBody Category category) {
         Long savedCategoryId = categoryService.saveCategory(category);
         return ResponseEntity.ok(savedCategoryId);
