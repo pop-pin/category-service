@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("v1/category")
+@RequestMapping("/category")
 @RequiredArgsConstructor
 public class CategoryController {
     private final CategoryService categoryService;
@@ -41,7 +41,7 @@ public class CategoryController {
     @DeleteMapping("/{category_id}")
     public ResponseEntity<Long> deleteCategory(@PathVariable("category_id") Long id) {
         Optional<Category> savedCategory = categoryService.getCategory(id);
-        if (savedCategory.isPresent()) {
+        if (savedCategory.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
         Long deletedCategoryId = categoryService.deleteCategory(id);
