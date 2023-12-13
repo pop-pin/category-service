@@ -1,13 +1,14 @@
 package com.poppin.categoryservice.entity;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,8 +17,7 @@ public class Category {
     private String name;
 
     @Builder
-    public Category(Long id, String name) {
-        this.id = id;
+    public Category(String name) {
         this.name = name;
     }
 }
